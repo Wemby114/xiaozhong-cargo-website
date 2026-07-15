@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
   return (
     <footer className="bg-[#0f2744] py-16 text-white">
@@ -6,11 +8,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
-                <svg viewBox="0 0 40 40" className="h-7 w-7" fill="none">
-                  <path d="M8 12L20 6L32 12V20L20 34L8 20V12Z" fill="#6bb5d9" opacity="0.8" />
-                  <path d="M14 16L20 12L26 16V22L20 28L14 22V16Z" fill="#c8954c" />
-                </svg>
+              <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-white/10">
+                <Image
+                  src="/logo.png"
+                  alt="晓众物流 Logo"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 object-contain"
+                />
               </div>
               <div>
                 <div className="text-lg font-bold">晓众物流</div>

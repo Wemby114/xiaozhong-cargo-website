@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const navLinks = [
   { label: '首页', href: '#hero' },
@@ -42,18 +43,14 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#0f2744]">
-            <svg viewBox="0 0 40 40" className="h-7 w-7" fill="none">
-              <path
-                d="M8 12L20 6L32 12V20L20 34L8 20V12Z"
-                fill="#6bb5d9"
-                opacity="0.8"
-              />
-              <path
-                d="M14 16L20 12L26 16V22L20 28L14 22V16Z"
-                fill="#c8954c"
-              />
-            </svg>
+          <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg">
+            <Image
+              src="/logo.png"
+              alt="晓众物流 Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 object-contain"
+            />
           </div>
           <div>
             <span
