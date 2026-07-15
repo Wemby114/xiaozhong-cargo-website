@@ -1,55 +1,49 @@
 import type { Metadata } from 'next';
+import { Noto_Sans_SC, Inter } from 'next/font/google';
 import { Inspector } from 'react-dev-inspector';
 import './globals.css';
 
+const notoSansSC = Noto_Sans_SC({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '900'],
+  variable: '--font-noto-sans-sc',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: {
-    default: '新应用 | 扣子编程',
-    template: '%s | 扣子编程',
+    default: '晓众物流 - 中亚五国专业国际货运服务',
+    template: '%s | 晓众物流 Xiao Zhong Cargo',
   },
   description:
-    '扣子编程是一款一站式云端 Vibe Coding 开发平台。通过对话轻松构建智能体、工作流和网站，实现从创意到上线的无缝衔接。',
+    '晓众物流（Xiao Zhong Cargo）专注中亚五国国际货运，提供铁路、公路、航空及多式联运服务，覆盖哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦。',
   keywords: [
-    '扣子编程',
-    'Coze Code',
-    'Vibe Coding',
-    'AI 编程',
-    '智能体搭建',
-    '工作流搭建',
-    '网站搭建',
-    '网站部署',
-    '全栈开发',
-    'AI 工程师',
+    '中亚物流',
+    '国际货运',
+    '晓众物流',
+    'Xiao Zhong Cargo',
+    '哈萨克斯坦物流',
+    '乌兹别克斯坦货运',
+    '中亚铁路运输',
+    '中亚公路运输',
+    '国际物流',
+    '跨境货运',
   ],
-  authors: [{ name: 'Coze Code Team', url: 'https://code.coze.cn' }],
-  generator: 'Coze Code',
-  // icons: {
-  //   icon: '',
-  // },
+  authors: [{ name: '晓众物流 Xiao Zhong Cargo' }],
   openGraph: {
-    title: '扣子编程 | 你的 AI 工程师已就位',
+    title: '晓众物流 - 中亚五国专业国际货运服务',
     description:
-      '我正在使用扣子编程 Vibe Coding，让创意瞬间上线。告别拖拽，拥抱心流。',
-    url: 'https://code.coze.cn',
-    siteName: '扣子编程',
+      '专注中亚五国国际货运，提供铁路、公路、航空及多式联运一站式物流解决方案。',
     locale: 'zh_CN',
     type: 'website',
-    // images: [
-    //   {
-    //     url: '',
-    //     width: 1200,
-    //     height: 630,
-    //     alt: '扣子编程 - 你的 AI 工程师',
-    //   },
-    // ],
   },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: 'Coze Code | Your AI Engineer is Here',
-  //   description:
-  //     'Build and deploy full-stack applications through AI conversation. No env setup, just flow.',
-  //   // images: [''],
-  // },
   robots: {
     index: true,
     follow: true,
@@ -64,8 +58,8 @@ export default function RootLayout({
   const isDev = process.env.COZE_PROJECT_ENV === 'DEV';
 
   return (
-    <html lang="en">
-      <body className={`antialiased`}>
+    <html lang="zh-CN" className={`${notoSansSC.variable} ${inter.variable}`}>
+      <body className="antialiased" style={{ fontFamily: 'var(--font-noto-sans-sc), var(--font-inter), system-ui, sans-serif' }}>
         {isDev && <Inspector />}
         {children}
       </body>
