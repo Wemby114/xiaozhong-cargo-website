@@ -150,9 +150,9 @@ export default function Coverage() {
         <div className="mt-16 rounded-2xl border border-[#e0ddd8] bg-white p-8 lg:p-12">
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="text-center lg:text-left">
-              <div className="mb-2 text-4xl font-bold text-[#0f2744]">3</div>
-              <div className="text-sm font-medium text-[#666666]">主要运输通道</div>
-              <div className="mt-1 text-xs text-[#6bb5d9]">Rail / Road / Air</div>
+              <div className="mb-2 text-4xl font-bold text-[#0f2744]">TIR</div>
+              <div className="text-sm font-medium text-[#666666]">国际公路运输资质</div>
+              <div className="mt-1 text-xs text-[#6bb5d9]">TIR Convention</div>
             </div>
             <div className="text-center lg:text-left">
               <div className="mb-2 text-4xl font-bold text-[#0f2744]">20+</div>

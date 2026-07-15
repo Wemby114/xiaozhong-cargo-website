@@ -79,7 +79,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">电话</div>
-                    <div className="font-medium">+86 XXX-XXXX-XXXX</div>
+                    <div className="font-medium">13308824967</div>
                   </div>
                 </div>
 
@@ -92,7 +92,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">邮箱</div>
-                    <div className="font-medium">contact@xiaozhongcargo.com</div>
+                    <div className="font-medium">wangjiaze@zhonghuiscs.cn</div>
                   </div>
                 </div>
 
@@ -105,8 +105,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">地址</div>
-                    <div className="font-medium">中国 · 新疆乌鲁木齐</div>
-                    <div className="text-sm text-white/50">中亚物流枢纽城市</div>
+                    <div className="font-medium">中国 · 新疆喀什</div>
+                    <div className="text-sm text-white/50">中巴经济走廊起点 · 面向中亚的陆路口岸</div>
                   </div>
                 </div>
 
@@ -119,8 +119,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">工作时间</div>
-                    <div className="font-medium">周一至周六 9:00 - 18:00</div>
-                    <div className="text-sm text-white/50">7×24小时紧急响应</div>
+                    <div className="font-medium">周一至周五 9:00 - 18:00</div>
                   </div>
                 </div>
               </div>

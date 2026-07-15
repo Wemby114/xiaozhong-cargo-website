@@ -67,8 +67,8 @@ export default function Hero() {
             </h1>
 
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-white/70">
-              晓众物流深耕中亚市场，提供铁路、公路、航空及多式联运一站式国际货运服务。
-              覆盖哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦全境。
+              晓众物流从新疆喀什出发，经陆路口岸直达中亚五国，
+              提供专业国际公路汽运服务。覆盖哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦全境。
             </p>
 
             <div className="flex flex-wrap gap-4">

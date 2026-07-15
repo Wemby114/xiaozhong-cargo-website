@@ -28,7 +28,7 @@ export default function Footer() {
               物流服务
             </h4>
             <ul className="space-y-2.5">
-              {['国际铁路运输', '国际公路运输', '国际航空货运', '多式联运', '报关清关'].map((item) => (
+              {['国际公路汽运', '报关清关服务'].map((item) => (
                 <li key={item}>
                   <span className="text-sm text-white/50 transition-colors hover:text-[#c8954c] cursor-pointer">
                     {item}
@@ -60,10 +60,10 @@ export default function Footer() {
               联系我们
             </h4>
             <ul className="space-y-2.5 text-sm text-white/50">
-              <li>电话：+86 XXX-XXXX-XXXX</li>
-              <li>邮箱：contact@xiaozhongcargo.com</li>
-              <li>地址：中国 · 新疆乌鲁木齐</li>
-              <li>工作时间：周一至周六 9:00-18:00</li>
+              <li>电话：13308824967</li>
+              <li>邮箱：wangjiaze@zhonghuiscs.cn</li>
+              <li>地址：中国 · 新疆喀什</li>
+              <li>工作时间：周一至周五 9:00-18:00</li>
             </ul>
           </div>
         </div>

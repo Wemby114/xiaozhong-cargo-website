@@ -4,26 +4,10 @@ import { useEffect, useRef, useState } from 'react';
 
 const services = [
   {
-    title: '国际铁路运输',
-    titleEn: 'Rail Freight',
-    desc: '依托中欧班列及中亚铁路网络，提供整箱（FCL）和拼箱（LCL）铁路运输服务。时效稳定，运量大，适合机械设备、大宗商品等货物。',
-    features: ['中欧班列专线', '整箱/拼箱灵活选择', '时效7-20天', 'GPS全程追踪'],
-    icon: (
-      <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="2">
-        <rect x="4" y="16" width="28" height="16" rx="2" />
-        <path d="M32 20h8l4 6v6h-12" />
-        <circle cx="12" cy="36" r="3" />
-        <circle cx="24" cy="36" r="3" />
-        <circle cx="38" cy="36" r="3" />
-        <path d="M2 40h44" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    title: '国际公路运输',
+    title: '国际公路汽运',
     titleEn: 'Road Freight',
-    desc: 'TIR国际公路运输，门到门直达服务。灵活便捷，适合中小批量货物、跨境电商货物及紧急货物运输。',
-    features: ['TIR跨境直达', '门到门服务', '时效5-12天', '灵活拼车/整车'],
+    desc: 'TIR国际公路运输，门到门直达服务。从新疆喀什出发，经陆路口岸直达中亚五国。灵活便捷，适合各类符合国际运输规定的货物，提供整车与拼车方案。',
+    features: ['TIR跨境直达', '门到门服务', '整车/拼车灵活选择', 'GPS全程追踪'],
     icon: (
       <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="2" y="18" width="20" height="14" rx="2" />
@@ -35,33 +19,17 @@ const services = [
     ),
   },
   {
-    title: '国际航空货运',
-    titleEn: 'Air Freight',
-    desc: '快速高效的航空货运服务，适合高价值、时效性强的货物。与多家航空公司合作，提供经济型和优先型空运方案。',
-    features: ['多家航司合作', '经济/优先双方案', '时效2-5天', '高价值货物专护'],
+    title: '报关清关服务',
+    titleEn: 'Customs Clearance',
+    desc: '专业报关团队，熟悉中亚各国海关政策与清关流程。提供出口报关、进口清关、单证办理等一站式通关服务，确保货物合规高效通行。',
+    features: ['出口报关', '进口清关', '单证代办', '合规咨询'],
     icon: (
       <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M24 6L42 20H30V38L24 42L18 38V20H6L24 6Z" />
-        <path d="M18 20L24 24L30 20" />
-      </svg>
-    ),
-  },
-  {
-    title: '多式联运',
-    titleEn: 'Multimodal Transport',
-    desc: '整合铁路、公路、航空多种运输方式，根据货物特性和客户需求定制最优运输方案，实现成本与时效的最佳平衡。',
-    features: ['方案定制优化', '成本时效平衡', '一单到底', '全程统一调度'],
-    icon: (
-      <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="2">
-        <circle cx="12" cy="12" r="6" />
-        <circle cx="36" cy="12" r="6" />
-        <circle cx="12" cy="36" r="6" />
-        <circle cx="36" cy="36" r="6" />
-        <path d="M18 12H30" />
-        <path d="M12 18V30" />
-        <path d="M36 18V30" />
-        <path d="M18 36H30" />
-        <path d="M18 18L30 30" strokeDasharray="3 3" />
+        <path d="M14 2H6a2 2 0 00-2 2v40a2 2 0 002 2h36a2 2 0 002-2V12L34 2H14z" />
+        <path d="M34 2v10h10" />
+        <path d="M16 22h16" strokeLinecap="round" />
+        <path d="M16 30h10" strokeLinecap="round" />
+        <path d="M16 38h14" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -100,16 +68,16 @@ export default function Services() {
             Our Services
           </span>
           <h2 className="mb-4 text-3xl font-bold text-[#0f2744] md:text-4xl">
-            全方位物流服务
+            专业公路汽运服务
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-[#666666]">
-            根据货物类型、时效要求和预算，为您匹配最优运输方案。
+            从新疆喀什出发，经陆路口岸直达中亚五国。提供整车与拼车方案，
             所有服务均符合正规国际运输规定。
           </p>
         </div>
 
         {/* Service Cards */}
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="mx-auto max-w-4xl grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
             <div
               key={service.title}
