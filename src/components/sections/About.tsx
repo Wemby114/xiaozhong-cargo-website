@@ -45,7 +45,7 @@ export default function About() {
                 <div className="mb-8 flex items-center gap-4">
                   <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl bg-white/10 backdrop-blur">
                     <Image
-                      src="/logo.png"
+                      src="/logo.jpg"
                       alt="晓众物流 Logo"
                       width={64}
                       height={64}

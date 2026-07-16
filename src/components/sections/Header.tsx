@@ -46,7 +46,7 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg">
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="晓众物流 Logo"
               width={40}
               height={40}
