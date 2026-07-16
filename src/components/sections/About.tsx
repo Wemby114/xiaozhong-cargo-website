@@ -60,8 +60,8 @@ export default function About() {
 
                 <blockquote className="mb-8 border-l-2 border-[#c8954c] pl-6">
                   <p className="text-lg leading-relaxed text-white/80 italic">
-                    "以专业的物流能力，搭建中国与中亚之间的贸易桥梁。
-                    每一次运输，都是信任的传递。"
+                    「以专业的物流能力，搭建中国与中亚之间的贸易桥梁。
+                    每一次运输，都是信任的传递。」
                   </p>
                 </blockquote>
 
