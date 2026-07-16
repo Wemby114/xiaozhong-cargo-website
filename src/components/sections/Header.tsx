@@ -7,7 +7,8 @@ const navLinks = [
   { label: '首页', href: '#hero' },
   { label: '服务覆盖', href: '#coverage' },
   { label: '物流服务', href: '#services' },
-  { label: '核心优势', href: '#advantages' },
+  { label: '运费估算', href: '#calculator' },
+  { label: '常见问题', href: '#faq' },
   { label: '关于我们', href: '#about' },
   { label: '联系我们', href: '#contact' },
 ];
