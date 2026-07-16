@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s | 晓众物流 Xiao Zhong Cargo',
   },
   description:
-    '晓众物流（Xiao Zhong Cargo）专注中亚五国国际公路汽运，从新疆喀什出发经陆路口岸直达中亚，覆盖哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦。',
+    '晓众物流（Xiao Zhong Cargo）立足新疆喀什，专注中亚五国国际公路汽运，经陆路口岸直达中亚，覆盖哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦。',
   keywords: [
     '中亚物流',
     '国际货运',

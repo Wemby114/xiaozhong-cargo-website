@@ -7,7 +7,7 @@ const services = [
     title: '国际公路汽运',
     titleEn: 'Road Freight',
     desc: 'TIR国际公路运输，门到门直达服务。从新疆喀什出发，经陆路口岸直达中亚五国。灵活便捷，适合各类符合国际运输规定的货物，提供整车与拼车方案。',
-    features: ['TIR跨境直达', '门到门服务', '整车/拼车灵活选择', 'GPS全程追踪'],
+    features: ['TIR跨境直达', '门到门服务', '整车/拼车灵活选择', '定期班次发车'],
     icon: (
       <svg viewBox="0 0 48 48" className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="2" y="18" width="20" height="14" rx="2" />

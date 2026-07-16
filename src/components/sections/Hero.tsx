@@ -56,7 +56,7 @@ export default function Hero() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#6bb5d9]/30 bg-[#6bb5d9]/10 px-4 py-1.5">
               <span className="h-2 w-2 rounded-full bg-[#6bb5d9] animate-pulse-glow" />
               <span className="text-sm font-medium text-[#6bb5d9]">
-                专注中亚五国国际货运
+                立足喀什 · 直达中亚五国
               </span>
             </div>
 
@@ -67,7 +67,7 @@ export default function Hero() {
             </h1>
 
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-white/70">
-              晓众物流从新疆喀什出发，经陆路口岸直达中亚五国，
+              晓众物流立足新疆喀什，经陆路口岸直达中亚五国，
               提供专业国际公路汽运服务。覆盖哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦全境。
             </p>
 
@@ -93,12 +93,12 @@ export default function Hero() {
                 <div className="mt-1 text-sm text-white/50">中亚国家覆盖</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">10+</div>
-                <div className="mt-1 text-sm text-white/50">年行业经验</div>
+                <div className="text-3xl font-bold text-white">TIR</div>
+                <div className="mt-1 text-sm text-white/50">国际运输资质</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">1000+</div>
-                <div className="mt-1 text-sm text-white/50">服务客户</div>
+                <div className="text-3xl font-bold text-white">1v1</div>
+                <div className="mt-1 text-sm text-white/50">专属客服对接</div>
               </div>
             </div>
           </div>

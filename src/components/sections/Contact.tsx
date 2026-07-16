@@ -92,7 +92,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">邮箱</div>
-                    <div className="font-medium">wangjiaze@zhonghuiscs.cn</div>
+                    <div className="font-medium">caojiawei@zhonghuiscs.cn</div>
                   </div>
                 </div>
 

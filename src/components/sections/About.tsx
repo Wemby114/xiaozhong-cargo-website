@@ -68,20 +68,20 @@ export default function About() {
                 {/* Key metrics */}
                 <div className="grid grid-cols-2 gap-6">
                   <div className="rounded-xl bg-white/5 p-4 backdrop-blur">
-                    <div className="text-3xl font-bold text-[#c8954c]">10+</div>
-                    <div className="mt-1 text-sm text-white/60">年行业深耕</div>
+                    <div className="text-3xl font-bold text-[#c8954c]">TIR</div>
+                    <div className="mt-1 text-sm text-white/60">国际运输资质</div>
                   </div>
                   <div className="rounded-xl bg-white/5 p-4 backdrop-blur">
                     <div className="text-3xl font-bold text-[#6bb5d9]">5</div>
                     <div className="mt-1 text-sm text-white/60">中亚国家覆盖</div>
                   </div>
                   <div className="rounded-xl bg-white/5 p-4 backdrop-blur">
-                    <div className="text-3xl font-bold text-[#c8954c]">1000+</div>
-                    <div className="mt-1 text-sm text-white/60">服务客户</div>
+                    <div className="text-3xl font-bold text-[#c8954c]">1v1</div>
+                    <div className="mt-1 text-sm text-white/60">专属客服对接</div>
                   </div>
                   <div className="rounded-xl bg-white/5 p-4 backdrop-blur">
-                    <div className="text-3xl font-bold text-[#6bb5d9]">99%</div>
-                    <div className="mt-1 text-sm text-white/60">准时交付率</div>
+                    <div className="text-3xl font-bold text-[#6bb5d9]">全</div>
+                    <div className="mt-1 text-sm text-white/60">流程一站式服务</div>
                   </div>
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function About() {
                 我们致力于为中国与中亚之间的贸易往来提供高效、安全、可靠的物流解决方案。
               </p>
               <p>
-                多年来，我们深耕中亚市场，建立了完善的物流网络和丰富的运营经验。
+                我们立足新疆喀什，依托陆路口岸的地理优势，建立了覆盖中亚五国的物流网络。
                 从哈萨克斯坦的阿斯塔纳到乌兹别克斯坦的塔什干，从吉尔吉斯斯坦的比什凯克
                 到塔吉克斯坦的杜尚别，再到土库曼斯坦的阿什哈巴德，我们的服务网络覆盖中亚全境。
               </p>

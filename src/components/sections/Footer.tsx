@@ -66,7 +66,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm text-white/50">
               <li>电话：13308824967</li>
-              <li>邮箱：wangjiaze@zhonghuiscs.cn</li>
+              <li>邮箱：caojiawei@zhonghuiscs.cn</li>
               <li>地址：中国 · 新疆喀什</li>
               <li>工作时间：周一至周五 9:00-18:00</li>
             </ul>
