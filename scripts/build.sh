@@ -1,17 +1,8 @@
 #!/bin/bash
-set -Eeuo pipefail
+set -e
 
-COZE_WORKSPACE_PATH="${COZE_WORKSPACE_PATH:-$(pwd)}"
+# 使用 npm 安装依赖（Vercel 默认使用 npm）
+npm install
 
-cd "${COZE_WORKSPACE_PATH}"
-
-echo "Installing dependencies..."
-pnpm install --prefer-frozen-lockfile --prefer-offline --loglevel debug --reporter=append-only
-
-echo "Building the Next.js project..."
-pnpm next build
-
-echo "Bundling server with tsup..."
-pnpm tsup src/server.ts --format cjs --platform node --target node20 --outDir dist --no-splitting --no-minify
-
-echo "Build completed successfully!"
+# 构建 Next.js 项目
+npm run build
