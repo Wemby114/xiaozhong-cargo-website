@@ -28,9 +28,33 @@ export default function Contact() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setError(result.error || '提交失败，请稍后重试');
+      }
+    } catch {
+      setError('网络错误，请稍后重试或直接拨打电话：13308824967');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (
@@ -273,11 +297,17 @@ export default function Contact() {
                   />
                 </div>
 
+                {error && (
+                  <div className="mt-4 rounded-lg bg-red-50 border border-red-200 p-3 text-sm text-red-700">
+                    {error}
+                  </div>
+                )}
                 <button
                   type="submit"
-                  className="mt-6 w-full rounded-lg bg-[#c8954c] px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-[#b8853c] hover:shadow-lg hover:shadow-[#c8954c]/20"
+                  disabled={loading}
+                  className="mt-6 w-full rounded-lg bg-[#c8954c] px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-[#b8853c] hover:shadow-lg hover:shadow-[#c8954c]/20 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  提交咨询
+                  {loading ? '提交中...' : '提交咨询'}
                 </button>
               </form>
             )}
