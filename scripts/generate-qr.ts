@@ -48,7 +48,7 @@ async function generateQRWithLogo() {
     qrImage.composite(bgImage, centerX, centerY);
 
     // 7. 保存最终二维码
-    await qrImage.write(qrOutputPath);
+    await qrImage.write(qrOutputPath as `${string}.${string}`);
     console.log('带logo的二维码已生成:', qrOutputPath);
 
     // 8. 删除临时文件
